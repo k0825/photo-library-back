@@ -1,0 +1,9 @@
+version: '3'
+services:
+  backend:
+    build: .
+    tty: true
+    volumes:
+      - ./src/:/go/src
+    ports:
+      - "3001:8080"
